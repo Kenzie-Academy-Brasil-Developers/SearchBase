@@ -1,1 +1,116 @@
-/* Desenvolva sua estilização aqui...*/
+body{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+main{
+    width: 80%;
+    height: 80%;
+    background-color: var(--color-grey-2);
+    border-radius: 5px;
+    display: flex;
+}
+
+h1{
+font-family: var(--Inter);
+font-size: 32px;
+font-weight: 600;
+line-height: 48px;
+color: var(--color-grey-7);
+margin-bottom: 35px;
+}
+
+.ApresentacaoHome{
+    width: 50%;
+    height: 100%;
+    background-color: var(--color-brand-1);
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    padding:140px 70px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.pesquisaUser{
+    width: 50%;
+    height: 100%;
+    background-color: var(--color-grey-2);
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding:140px 100px;
+}
+
+.text{
+font-family: var(--Inter);
+font-size: 20px;
+font-weight: 400;
+line-height: 30px;
+margin-bottom: 45px;
+color: var(--color-grey-7);
+}
+
+.Achados{
+font-family: var(--Inter);
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+color: var(--color-grey-7);
+margin-right: 18px;
+}
+
+.textProcura{
+font-family: var(--Inter);
+font-size: 20px;
+font-weight: 500;
+line-height: 30px;
+margin-bottom: 45px;
+color: var(--color-grey-7);
+}
+
+.textGithub{
+font-family:var(--Inter);
+font-size: 14px;
+font-weight: 500;
+line-height: 21px;
+color: var(--color-grey-7);
+margin-bottom: 1rem;
+}
+
+form{
+    flex-direction: column;
+}
+
+img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+.UserRecente{
+    display: flex;
+    align-items: center;
+}
+
+input{
+height: 38px;
+width: 316px;
+border-radius: 4px;
+margin-bottom: 1.25rem;
+background-color: var(--color-grey-1);
+border: solid 1px var(--color-grey-2);
+}
+
+input:focus{
+    outline: none;
+}

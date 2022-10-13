@@ -1,0 +1,68 @@
+.btnEmail{
+    height: 38px;
+    width: 84px;
+    border-radius: 8px;
+    background-color: var(--color-brand-2);
+    color: var(--color-grey-7);
+    border: solid 1px var(--color-grey-2);
+    margin-right: 7px;
+    }
+    
+    .cor{
+        color: var(--color-grey-7);
+    }
+    
+    .btnTrocar{
+    height: 38px;
+    width: 169px;
+    border-radius: 8px;
+    background-color: var(--color-grey-4);
+    color: var(--color-grey-7);
+    border: solid 1px var(--color-grey-2);
+    }
+    .btnRepositorio{
+        height: 28px;
+        width: 93px;
+        border-radius: 4px;
+        padding: 0px 8px;
+        background-color: var(--color-grey-2);
+        color: var(--color-grey-7);
+        border: solid 1px var(--color-grey-7);
+        margin-right: 7px;
+        }
+        
+        .btnRepositorio:hover{
+            background-color: var(--color-brand-2);
+            border: solid 1px var(--color-grey-2);
+        }
+        
+        .btnDemo{
+        height: 28px;
+        width: 56px;
+        left: 134px;
+        top: 176px;
+        border-radius: 4px;
+        padding: 0px 8px;
+        border: solid 1px var(--color-grey-7);
+        color: var(--color-grey-7);
+        background-color: var(--color-grey-2);
+        }
+        
+        .btnDemo:hover{
+            background-color: var(--color-brand-2);
+            border: solid 1px var(--color-grey-2);
+        }
+        
+        
+.btnPesquisa{
+    height: 38px;
+    width: 316px;
+    border-radius: 4px;
+    padding: 10px 90px;
+    background-color: var(--color-brand-2);
+    opacity: 40%;
+    color: var(--color-grey-7);
+    opacity: 40%;
+    border: solid 1px var(--color-grey-2);
+    cursor: pointer;
+    }

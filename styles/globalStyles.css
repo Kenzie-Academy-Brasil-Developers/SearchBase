@@ -14,4 +14,22 @@
     --color-grey-6:  #A6A8A9;
     --color-grey-7:  #FFFFFF;
     --color-alert:   #C22554;
+    
+
+    /* Fonte */
+
+    --Inter: 'Inter', sans-serif ;
+}
+
+button{
+  cursor: pointer;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration:none;
+
 }
