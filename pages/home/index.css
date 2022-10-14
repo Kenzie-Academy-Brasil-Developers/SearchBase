@@ -94,6 +94,7 @@ img{
     height: 40px;
     border-radius: 50%;
     margin-right: 10px;
+    cursor: pointer;
 }
 
 
@@ -104,7 +105,8 @@ img{
 
 input{
 height: 38px;
-width: 316px;
+width: 91%;
+min-width: 100%;
 border-radius: 4px;
 margin-bottom: 1.25rem;
 background-color: var(--color-grey-1);
@@ -113,4 +115,10 @@ border: solid 1px var(--color-grey-2);
 
 input:focus{
     outline: none;
+}
+
+.nEncontrado{
+    color: var(--color-alert);
+    position: relative;
+    bottom: 7px;
 }

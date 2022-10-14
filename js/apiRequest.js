@@ -12,13 +12,19 @@ async function request() {
     .then((res) => res.json())
     .then(async (res) => {
       localStorage.setItem("nome", res.login || "");
-      localStorage.setItem("proficao", res.company  || "");
+      localStorage.setItem("proficao", res.bio  || "");
+      localStorage.setItem("E-mail", res.email  || "");
       localStorage.setItem("image", res.avatar_url || "");
       localStorage.setItem("idUser", res.id || "");
       localStorage.setItem("linkPerfil", res.html_url || "");
       return res;
     })
-  return apiRequest;
+    if(apiRequest.message == "Not Found"){
+      const nEncontrado = document.querySelector(".nEncontrado")
+      nEncontrado.innerText = "Usuário não encontrado"
+    }
+  
+  return  apiRequest;
 }
 
 async function requestRepo() {
@@ -38,7 +44,8 @@ async function requestRepo() {
         });
    
         return res;
-      });
+      })
+      .catch((err)=>console.log(err))
     return apiRequest;
   }
   

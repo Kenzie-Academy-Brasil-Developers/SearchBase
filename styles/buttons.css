@@ -56,9 +56,10 @@
         
 .btnPesquisa{
     height: 38px;
-    width: 316px;
+    width: 91%;
+    min-width: 100%;
     border-radius: 4px;
-    padding: 10px 90px;
+    padding: 10px ;
     background-color: var(--color-brand-2);
     opacity: 40%;
     color: var(--color-grey-7);

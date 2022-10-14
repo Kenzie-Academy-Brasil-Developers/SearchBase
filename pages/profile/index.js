@@ -2,23 +2,24 @@ const nome = localStorage.getItem("nome")
 const image = localStorage.getItem("image")
 const proficao = localStorage.getItem("proficao")
 const perfil = localStorage.getItem("linkPerfil")
+const Email = localStorage.getItem("E-mail")
 const array = JSON.parse(localStorage.getItem("object")) 
 const header = document.querySelector("header")
 
 header.insertAdjacentHTML("beforeend",`
 <div class="containerUser">
 <picture>
-  <img src="${image}" alt="">
+  <img src=${image}  alt="">
 </picture>
-<h1 class="nome">${nome}</h1>
+<h1 class="nome">${nome} </h1>
 <p class="proficao">${proficao}</p>
 </div> 
 <div>
 <button class="btnEmail">
-<a class="cor" href="">Email</a>
+<a class="cor" href="${Email} ">Email</a>
 </button>
 <button class="btnTrocar">
- <a class="cor" href="../home/index.html">Trocar de usuário</a>
+ <a class="cor" href="../../index.html">Trocar de usuário</a>
 </button>
 </div>
 `)
@@ -34,11 +35,13 @@ function listarUl(arr){
 const ul = document.querySelector("ul")
 ul.insertAdjacentHTML("beforeend",`
 <li>
-<h2 class="titulo">${arr.name}</h2>
-<p class="text">${arr.description}</p>
+<h2 class="titulo">${arr.name ||""} </h2>
+<p class="text">${arr.description ||""}</p>
 <button class="btnRepositorio">
-<a class="cor" href="${arr.html_url}">Repositório</a></button>
-<button class="btnDemo">Demo</button>
+<a class="cor" href="${arr.html_url ||""}">Repositório</a></button>
+<button class="btnDemo">
+<a class="cor" href="${perfil ||""}">Demo</a>
+</button>
 </li>
 `)
 

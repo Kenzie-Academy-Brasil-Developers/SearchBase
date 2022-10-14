@@ -7,9 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../styles/globalStyles.css" />
-    <link rel="stylesheet" href="../../styles/buttons.css">
-    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./styles/globalStyles.css" />
+    <link rel="stylesheet" href="./styles/tooltip.css">
+    <link rel="stylesheet" href="./styles/buttons.css">
+    <link rel="stylesheet" href="./pages/home/index.css" />
     <title>Git Search</title>
   </head>
   <body>
@@ -26,13 +27,12 @@
       <h5 class="textGithub">Usuário github</h5>
       <form>
         <input type="text" placeholder="  Digite um usuário do github aqui...">
+        <p class="nEncontrado"></p>
         <button class="btnPesquisa">Ver perfil do github</button>
       </form>
       </article>
-
     </main>
-    <script src="../../js/Toast.js"></script>
-    <script src="../../js/apiRequest.js"></script>
-    <script src="./index.js"></script>
+    <script src="./js/apiRequest.js"></script>
+    <script src="./pages/home/index.js"></script>
   </body>
 </html>
