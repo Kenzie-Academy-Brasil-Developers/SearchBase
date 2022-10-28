@@ -67,3 +67,7 @@
     border: solid 1px var(--color-grey-2);
     cursor: pointer;
     }
+
+    .opacity{
+        opacity: 100%;
+    }

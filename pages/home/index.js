@@ -39,3 +39,19 @@ function userRecente(){
 }
 userRecente()
 
+function abilitar(){
+  const input = document.querySelector("input")
+const buttonPs = document.querySelector("#pesquisa")
+
+input.addEventListener("change",()=>{
+  if(input.value !== ""){
+    buttonPs.disabled = false;
+    buttonPs.classList.toggle("opacity");
+  } else {
+    buttonPs.disabled = true;
+  }
+})
+}
+abilitar()
+
+
